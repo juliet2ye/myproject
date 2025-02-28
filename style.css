@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.text-center {
+  text-align: center;
+}
+
+/* Theme Colors */
+:root {
+  --primary-color: #ff6600;
+  --secondary-color: #00509e;
+  --light-bg: #f9f9f9;
+  --dark-text: #222;
+}
+
+/* Banner Section */
+.banner {
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+.banner h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.banner h2 {
+  font-size: 24px;
+  font-weight: 300;
+}
+.btn-blue {
+  display: inline-block;
+  background: var(--secondary-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn-blue:hover {
+  background: var(--primary-color);
+}
+
+/* About Section */
+#about {
+  background: var(--light-bg);
+  padding: 60px 0;
+  text-align: center;
+}
+.avatar img {
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid var(--primary-color);
+  margin-bottom: 20px;
+}
+
+/* Services Section */
+#services {
+  padding: 60px 0;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 30%;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.card h3 {
+  color: var(--secondary-color);
+}
+
+/* Portfolio Section */
+#portfolio {
+  background: var(--light-bg);
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* Footer Section */
+.footer-card {
+  background: var(--secondary-color);
+  color: white;
+  padding: 40px 0;
+}
+.footer-card p {
+  margin-bottom: 10px;
+}
+.social-icons {
+  list-style: none;
+  padding: 0;
+}
+.social-icons li {
+  display: inline;
+  margin: 0 10px;
+}
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+.social-icons a:hover {
+  color: var(--primary-color);
+}
